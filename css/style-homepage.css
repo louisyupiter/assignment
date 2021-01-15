@@ -1,0 +1,258 @@
+body header#header .banner.banner-homePage {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1640px;
+}
+body header#header .banner.banner-homePage img,
+body header#header .banner.banner-homePage video {
+  flex-basis: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+body header#header .banner.banner-aboutme img,
+body header#header .banner.banner-aboutme video {
+  flex-basis: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+body main .main-content article.main-content-side .preview-post p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 90px;
+  overflow: hidden;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  p:not(:first-child) {
+  display: none;
+}
+
+body main .main-content article.main-content-side .preview-time {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+body main .main-content article.main-content-side .preview-time time {
+  padding: 5px;
+  background-color: #dedede;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Sidebar */
+body main .main-content aside.main-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+body main .main-content aside.main-sidebar .main-sidebar-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .main-content aside.main-sidebar .main-sidebar-photo {
+  display: flex;
+  flex-basis: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 0;
+}
+body main .main-content aside.main-sidebar .main-sidebar-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 30px;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address .sidebar-icon {
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address svg {
+  margin: auto;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address span {
+  flex-basis: 100%;
+  color: #414043;
+  font-size: 15px;
+  line-height: 28px;
+  padding-left: 10px;
+  font-style: normal;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address span img.icon {
+  fill: #ffffff;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address span a {
+  color: #414043;
+  padding-left: 10px;
+  font-style: normal;
+  text-decoration: none;
+}
+body main .main-content aside.main-sidebar .main-sidebar-address span a:hover {
+  font-weight: bold;
+}
+body main .main-content aside.main-sidebar .sidebar-3 {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0 auto;
+}
+body main .main-content aside.main-sidebar .sidebar-3 h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  flex-basis: 100%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #414043;
+}
+body main .main-content aside.main-sidebar .sidebar-3 p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+body main .main-content aside.main-sidebar .sidebar-3 .signature {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .main-content aside.main-sidebar .sidebar-3 .signature img {
+  flex-basis: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  max-height: 100px;
+}
+
+/* https://www.templatemonster.com/blog/css-media-queries-for-all-devices-and-browsers-including-ie7-and-ie8/ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Banner */
+  body header#header .banner.banner-homePage {
+    margin: 0 auto;
+    /* margin-bottom: 40px; */
+  }
+  body header#header .banner.banner-homePage img {
+    height: 400px;
+    box-shadow: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* body - main content */
+  body main .main-content {
+    margin-bottom: 30px;
+  }
+  body main .main-content aside.main-sidebar {
+    flex-basis: 100%;
+  }
+  
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px){
+  /* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  body main .main-content aside.main-sidebar .sidebar-3 {
+    flex-basis: 80%;
+  }
+  body main .main-content aside.main-sidebar .sidebar-3 .signature img {
+    flex-basis: 40%;
+  }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+  body main .main-content aside.main-sidebar .sidebar-3 {
+    flex-basis: 50%;
+  }
+  body main .main-content aside.main-sidebar .sidebar-3 .signature img {
+    flex-basis: 40%;
+  }
+
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+  /* STYLES GO HERE */
+  body main .main-content aside.main-sidebar .sidebar-3 {
+    flex-basis: 50%;
+  }
+  body main .main-content aside.main-sidebar .sidebar-3 .signature img {
+    flex-basis: 40%;
+  }
+  body main .main-content aside.main-sidebar .main-sidebar-photo {
+    display: flex;
+    flex-basis: 70%;
+    padding-right: 30px;
+  }
+  body main .main-content aside.main-sidebar .main-sidebar-address {
+    display: flex;
+    flex-basis: 30%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* banner */
+  body header#header .banner.banner-homePage {
+    margin-bottom: 80px;
+  }
+
+  /* body - main content  */
+  body main .main-content aside.main-sidebar {
+    flex-basis: 40%;
+  }
+  body main .main-content aside.main-sidebar .main-sidebar-photo {
+    flex-basis: 50%;
+    height: 400px;
+  }
+  body main .main-content aside.main-sidebar .main-sidebar-address {
+    flex-basis: 40%;
+  }
+
+  /*  sidebar */
+
+  body main .main-content aside.main-sidebar .sidebar-3 {
+    flex-basis: 100%;
+  }
+}

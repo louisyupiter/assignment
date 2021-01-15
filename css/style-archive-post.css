@@ -1,0 +1,500 @@
+body header#header .banner.banner-article img {
+  flex-basis: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+body main .main-content article.main-content-side {
+  margin-bottom: 30px;
+}
+body main .main-content article.main-content-side header h2 a {
+  font-size: 30px;
+}
+body main .main-content article.main-content-side header.preview-header time {
+  padding: 5px;
+  background-color: #dedede;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+body main .main-content article.main-content-side .preview-time {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+body main .main-content article.main-content-side .preview-time time {
+  padding: 5px;
+  background-color: #dedede;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+body.archive-post main .main-content article.main-content-side .preview-post p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 90px;
+  overflow: hidden;
+}
+body.archive-post
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  p:not(:first-child) {
+  display: none;
+}
+
+body main .main-content article.main-content-side section#comments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+body main .main-content article.main-content-side section#comments .title-comment{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dedede;
+}
+body main .main-content article.main-content-side section#comments .title-comment:hover{
+  cursor: pointer;
+}
+body main .main-content article.main-content-side section#comments .title-comment h2 {
+  /* flex-basis: 100%; */
+  margin: 0;
+  font-size: 20px;
+}
+body main .main-content article.main-content-side section#comments .title-comment svg {
+  margin-left: 15px;
+width: 14px;
+height: 25px;
+}
+body main .main-content article.main-content-side section#comments .title-comment svg path{
+  fill: #414043;
+  transform: translateY(0);
+  transition: 0.2s;
+}
+body main .main-content article.main-content-side section#comments .title-comment:hover svg path{
+  transform: translateY(20%);
+}
+
+body main .main-content article.main-content-side section#comments .comments-shown.comments-shown-active{
+  max-height: none;
+  overflow: auto;
+  opacity: 100%;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 2s ease-out;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown
+  .comments-list {
+  flex-basis: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #dedede;
+  word-break: break-all;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown
+  .comments-list:last-child {
+  border-bottom: 0;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown
+  .comments-list.comments-odd {
+  background-color: #dddddd;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown
+  .comments-list
+  h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  /* flex-basis: 100%; */
+  font-size: 16px;
+  font-family: "Helvetica Now";
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-shown
+  .comments-list
+  p {
+  font-size: 14px;
+  font-family: "Helvetica Now-Light";
+  /* padding-left: 15px; */
+  line-height: 24px;
+  /* flex-basis: 100%; */
+  letter-spacing: 1px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .post-article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  background-color: #f3f3f3;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  /* margin-bottom: 5px; */
+  /* background-color: #dedede; */
+  padding: 10px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-name
+  label {
+  /* padding: 5px; */
+  font-family: "Helvetica Now";
+  font-size: 14px;
+  line-height: 28px;
+  flex-basis: 20%;
+  text-align: center;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 10px;
+  padding-top: 0;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  input#comment {
+  font-size: 12px;
+  font-family: "Helvetica Now-Light";
+  color: #414043;
+  padding: 5px;
+  resize: none;
+  flex-basis: 80%;
+  height: 50px;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 0;
+  border-right: 0;
+  outline: none;
+  letter-spacing: 1px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  input#comment:required {
+  box-shadow: 0 4px 2px -2px red;
+  box-shadow: none;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  input#comment::placeholder {
+  color: #414043;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  .button-submit {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centering y-axis */
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left: 0;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  .button-submit:hover {
+  cursor: pointer;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .comments-text
+  .button-submit
+  svg
+  path {
+  fill: #414043;
+}
+body
+main
+.main-content
+article.main-content-side
+section#comments form:invalid > .comments-text
+.button-submit
+svg
+path {
+  fill: #dddddd;
+}
+body
+main
+.main-content
+article.main-content-side
+section#comments form:invalid > .comments-text
+.button-submit {
+  cursor: default;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .notif-comments {
+  display: flex;
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .notif-comments
+  .notif-worked {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .notif-comments
+  span {
+  font-size: 14px;
+  font-family: "Helvetica Now";
+  color: rgb(63, 189, 63);
+  display: flex;
+  flex-basis: 90%;
+  flex-wrap: wrap;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .notif-comments
+  .close {
+  display: flex;
+  flex-basis: 10%;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  section#comments
+  .notif-comments
+  svg {
+  margin: auto;
+}
+
+/* sidebar */
+body main .main-content .sidebar-3 {
+  display: flex;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+}
+body main .main-content .sidebar-3 h2 {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0;
+  margin-bottom: 30px;
+}
+body main .main-content .sidebar-3 .arsip-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-content: flex-start;
+}
+body main .main-content .sidebar-3 .arsip-link a {
+  /* flex-wrap: wrap; */
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #434041;
+}
+
+body main .main-content .sidebar-3 .arsip-link a:hover {
+  font-weight: bold;
+}
+
+/* https://www.templatemonster.com/blog/css-media-queries-for-all-devices-and-browsers-including-ie7-and-ie8/ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Banner */
+  body header#header .banner.banner-article {
+    margin-bottom: 30px;
+    height: 200px;
+  }
+  body header#header .banner.banner-article img {
+    height: auto;
+  }
+
+  /* body - main content */
+  body main .main-content {
+    margin-bottom: 30px;
+  }
+  body main .main-content article.main-content-side {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  body main .main-content aside.main-sidebar {
+    flex-basis: 100%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* banner */
+  body header#header .banner.banner-article {
+    margin-bottom: 30px;
+  }
+
+  /* body - main content  */
+  body
+    main
+    .main-content
+    article.main-content-side
+    section#comments
+    .post-article {
+    flex-basis: 50%;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    section#comments
+    .comments-text
+    input#comment {
+    flex-basis: 90%;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    section#comments
+    .comments-text
+    .button-submit {
+    flex-basis: 10%;
+  }
+
+  /* comment */
+  body
+    main
+    .main-content
+    article.main-content-side
+    section#comments
+    .notif-comments
+    .notif-worked {
+    flex-basis: 50%;
+  }
+}

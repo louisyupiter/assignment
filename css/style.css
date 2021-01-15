@@ -1,0 +1,499 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Now", Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(36, 36, 36, 0.8);
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.f100 {
+  flex-basis: 100%;
+}
+
+/* Navigation */
+body header#header {
+  display: flex;
+  flex-wrap: wrap;
+}
+body header#header .navigation-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+body header#header nav.primary-nav {
+  display: flex;
+  flex-basis: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 100px;
+}
+body header#header nav.primary-nav .primary-nav__logo {
+  margin-right: auto;
+}
+body header#header nav.primary-nav .primary-nav__logo a img {
+  height: 50px;
+  /* max-width: 133px; */
+}
+
+body header#header nav.primary-nav ul.primary-nav__list {
+  display: flex;
+}
+body header#header nav.primary-nav ul.primary-nav__list li {
+  display: flex;
+  height: 100px;
+}
+body header#header nav.primary-nav ul.primary-nav__list li button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  font-family: "Helvetica Now";
+  color: #414043;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  padding: 0 16px;
+}
+body header#header nav.primary-nav ul.primary-nav__list li:hover button {
+  background-color: #414043;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+body header#header nav.primary-nav button.mobile-nav__button {
+  background: none;
+  border: 0;
+}
+body header#header nav.primary-nav button.mobile-nav__button:hover {
+  cursor: pointer;
+}
+body header#header nav.primary-nav button.mobile-nav__button svg path{
+  fill: #707070;
+  transition: 0.2s;
+}
+body header#header nav.primary-nav button.mobile-nav__button:hover svg path{
+  fill: #414043;
+}
+
+/* Mobile-Nav */
+.mobile-nav {
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(200%);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 99;
+}
+.mobile-nav.active {
+  transform: translateX(0);
+  opacity: 100%;
+  transition: 0.5s;
+}
+
+.mobile-nav button {
+  background-color: transparent;
+  border: none;
+  padding: 25px;
+}
+.mobile-nav button:hover {
+  cursor: pointer;
+}
+.mobile-nav button svg.btn-close{
+  margin-left: 10px;
+}
+
+.mobile-nav button svg .textclosebtn{
+  transform: translateY(100%);
+  opacity: 0;
+}
+.mobile-nav button svg .c-textclosebtn{
+  transition: 0.5s;
+}
+.mobile-nav button:hover svg .c-textclosebtn{
+  transform: translateY(0);
+  opacity: 100%;
+}
+.mobile-nav button svg .l-textclosebtn{
+  transition: 0.5s;
+}
+.mobile-nav button:hover svg .l-textclosebtn{
+  transform: translateY(0);
+  opacity: 100%;
+}
+.mobile-nav button svg .o-textclosebtn{
+  transition: 0.7s;
+}
+.mobile-nav button:hover svg .o-textclosebtn{
+  transform: translateY(0);
+  opacity: 100%;
+}
+.mobile-nav button svg .s-textclosebtn{
+  transition: 0.9s;
+}
+.mobile-nav button:hover svg .s-textclosebtn{
+  transform: translateY(0);
+  opacity: 100%;
+}
+.mobile-nav button svg .e-textclosebtn{
+  transition: 1s;
+}
+.mobile-nav button:hover svg .e-textclosebtn{
+  transform: translateY(0);
+  opacity: 100%;
+}
+
+
+.mobile-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.mobile-nav ul li {
+  display: flex;
+  /* border-bottom: 1px solid #dddddd; */
+  transition: 0.5s;
+  padding: 20px;
+  transition: 0.5s;
+}
+.mobile-nav ul li:last-child {
+  border-bottom: 0;
+}
+.mobile-nav ul li:hover {
+  background-color: #414043;
+  cursor: pointer;
+}
+.mobile-nav ul li button {
+  color: #414043;
+  display: block;
+  font-size: 2rem;
+  font-family: "Helvetica Now";
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+  flex-basis: 100%;
+  text-align: right;
+}
+.mobile-nav ul li:hover button {
+  background-color: #414043;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+/* banner */
+body header#header .banner {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  overflow: hidden;
+}
+
+/* body - main content  */
+body main {
+  display: flex;
+}
+body main .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 24px;
+  padding-top: 30px;
+}
+body main .main-content article.main-content-side {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+body main .main-content article.main-content-side header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+body main .main-content article.main-content-side .preview-post {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+body main .main-content article.main-content-side .preview-post h3 {
+  margin-bottom: 0px;
+  flex-basis: 100%;
+}
+
+body main .main-content article.main-content-side header h2 {
+  flex-basis: 100%;
+  color: rgb(36, 36, 36);
+  font-family: "Helvetica Now-Bold";
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-transform: none;
+  margin: 0 auto;
+  /* margin-bottom: 10px; */
+}
+body main .main-content article.main-content-side header h2 a {
+  text-decoration: none;
+  color: #414043;
+  font-size: 26px;
+}
+body main .main-content article.main-content-side header .author {
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+body main .main-content article.main-content-side header span {
+  margin: 5px 0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+body main .main-content article.main-content-side header span.post-name-author {
+  padding: 5px;
+  background-color: #dedede;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+body main .main-content article.main-content-side .preview-post p {
+  margin-top: 0px;
+  line-height: 30px;
+  /* display: flex; */
+  flex-basis: 100%;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  p:not(1) {
+  display: none;
+}
+
+/* input text */
+input[type="text"] {
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px;
+  font-family: "Helvetica Now-Light";
+  letter-spacing: 1px;
+  flex-basis: 80%;
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: #414043;
+  font-size: 11px;
+}
+
+/* footer */
+body footer#footer {
+  display: flex;
+  border-top: 1px solid #dddddd;
+  /* background-color: #414043; */
+}
+body footer#footer p {
+  flex-basis: 100%;
+  /* color: #ffffff; */
+  font-size: 12px;
+  font-family: "Helvetica Now";
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* underline-link style and animation */
+a.readmore-btn {
+  font-family: "Helvetica Now-ExtraBold";
+  font-size: 24px;
+  line-height: 44px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  color: rgb(36, 36, 36);
+  position: relative;
+}
+a.readmore-btn:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.readmore-btn:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+/* end */
+
+/* https://www.templatemonster.com/blog/css-media-queries-for-all-devices-and-browsers-including-ie7-and-ie8/ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* STYLES GO HERE */
+  /* Navigation */
+  body header#header nav.primary-nav {
+    padding: 0 24px;
+  }
+  body header#header nav.primary-nav ul.primary-nav__list {
+    display: none;
+  }
+
+  /* body - main content */
+  body main .main-content {
+    margin-bottom: 30px;
+  }
+  body main .main-content article.main-content-side {
+    flex-basis: 100%;
+    padding: 0;
+    /* margin-bottom: 30px; */
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* STYLES GO HERE */
+  body header#header nav.primary-nav {
+    padding: 0 24px;
+  }
+  body header#header nav.primary-nav ul.primary-nav__list {
+    display: none;
+  }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */
+  body header#header nav.primary-nav ul.primary-nav__list {
+    display: none;
+  }
+  body header#header nav.primary-nav {
+    padding: 0 24px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+  
+  body header#header nav.primary-nav {
+    padding: 0 24px;
+  }
+  body header#header nav.primary-nav ul.primary-nav__list {
+    display: visible;
+  }
+  body header#header nav.primary-nav button.mobile-nav__button {
+    display: none;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+
+@media only screen and (min-width: 1024px){
+  /* STYLES GO HERE */
+  
+  body header#header nav.primary-nav {
+    padding: 0 24px;
+  }
+  body header#header nav.primary-nav ul.primary-nav__list {
+    display: visible;
+  }
+  body header#header nav.primary-nav button.mobile-nav__button {
+    display: none;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Navigation */
+  body header#header nav.primary-nav {
+    max-width: 1440px;
+  }
+  body header#header nav.primary-nav button.mobile-nav__button {
+    display: none;
+  }
+
+  /* body - main content  */
+  body main .main-content {
+    max-width: 1440px;
+    margin-bottom: 80px;
+  }
+  body main .main-content .main-content-list {
+    flex-basis: 60%;
+  }
+  body main .main-content article.main-content-side {
+    margin-bottom: 30px;
+    padding-right: 8.5rem;
+  }
+  body main .main-content article.main-content-side header h2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  body main .main-content article.main-content-side header span.post-author {
+    flex-basis: 100%;
+  }
+  body main .main-content article.main-content-side .preview-post p {
+    margin-top: 0px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* STYLES GO HERE */
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}

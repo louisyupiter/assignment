@@ -1,0 +1,230 @@
+
+body main .main-content article.main-content-side h2{
+  flex-basis: 100%;
+}
+body main .main-content article.main-content-side .preview-post {
+  flex-basis: 60%;
+}
+
+body main .main-content article.main-content-side .photo-profile {
+  margin: 0 auto;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  .detail-information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  .detail-information
+  ul {
+  list-style-type: none;
+  padding: 0;
+  flex-basis: 100%;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  .detail-information
+  ul
+  li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  .detail-information
+  ul
+  li
+  a {
+  color: #414043;
+  text-decoration: none;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  .preview-post
+  .detail-information
+  ul
+  li
+  a:hover {
+  font-weight: bold;
+}
+
+body main .main-content article.main-content-side #myPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  #myPortfolio
+  .list-myPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  #myPortfolio
+  .list-myPortfolio
+  img {
+  max-width: 100%;
+  flex-basis: 100%;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: 0.2s;
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  #myPortfolio
+  .list-myPortfolio:hover
+  img {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Chrome 19+ & Safari 6+ */
+}
+
+body
+  main
+  .main-content
+  article.main-content-side
+  #myPortfolio
+  .list-myPortfolio
+  h3 {
+  font-size: 28px;
+  flex-basis: 100%;
+}
+body
+  main
+  .main-content
+  article.main-content-side
+  #myPortfolio
+  .list-myPortfolio
+  p {
+  font-size: 16px;
+  flex-basis: 100%;
+  line-height: 25px;
+}
+
+/* https://www.templatemonster.com/blog/css-media-queries-for-all-devices-and-browsers-including-ie7-and-ie8/ */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Banner */
+  body header#header .banner.banner-aboutme {
+    margin-bottom: 30px;
+  }
+  body header#header .banner.banner-aboutme img,
+  body header#header .banner.banner-aboutme video {
+    height: 350px;
+  }
+
+  /* body - main content */
+  body main .main-content {
+    margin-bottom: 30px;
+  }
+  body main .main-content article.main-content-side {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  body main .main-content aside.main-sidebar {
+    flex-basis: 100%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* banner */
+  body header#header .banner.banner-aboutme {
+    margin-bottom: 30px;
+  }
+
+  /* body - main content  */
+  body main .main-content article.main-content-side {
+    padding-right: 0;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    .preview-post
+    .detail-information
+    ul {
+    flex-basis: 50%;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    #myPortfolio
+    .list-myPortfolio {
+    margin-bottom: 100px;
+    flex-basis: 50%;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    #myPortfolio
+    .list-myPortfolio:nth-child(even) {
+    padding-left: 25px;
+  }
+  body
+    main
+    .main-content
+    article.main-content-side
+    #myPortfolio
+    .list-myPortfolio:nth-child(odd) {
+    padding-right: 25px;
+  }
+  
+}
